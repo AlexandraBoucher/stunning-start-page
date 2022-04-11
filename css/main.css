@@ -16,26 +16,84 @@ body {
 
 h1 {
   margin: 0;
-
 }
 
+h2 {
+  font-family: PT Sans Narrow, sans-serif;
+}
 header {
-  background-color: #bd027d;
   display: grid;
-
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    "help amoeba super"
+    ".    amoeba .    ";
+    justify-content: space-between;
+    grid-template-rows: 1fr 2.5em;
 }
 
-ul {
+nav {
+  background-color: #bd027d;
+  grid-column: 1 / -1;
+  grid-row: 1;
+}
+nav ul {
   list-style-type: none;
   display: flex;
+  justify-content: space-between;
+  height: 100%;
+  align-items: center;
 }
-li a {
+
+h1 {
+  grid-area: amoeba;
+  z-index: 1;
+}
+
+nav li a {
   font-family: PT Sans Narrow, sans-serif;
   text-decoration: none;
   color: #eccee2;
   text-transform: uppercase;
   border: 2px solid #960062;
   border-radius: 6px;
+}
 
 
+
+main ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  padding: 0;
+}
+
+section li {
+  display: grid;
+  grid-template-rows: 1fr;
+  border: 2px solid #bebebe;
+  border-radius: 6px;
+  margin: 0;
+}
+
+div img {
+  width: 1.5rem;
+  order: -1;
+}
+
+div {
+  font-size: .875rem;
+  font-style: italic;
+  display: flex;
+  background-color: #bebebe;
+  order: -1;
+  border-radius: 1em 0 0 1em;
+  justify-content: flex-end;
+}
+
+h3 {
+  background-color: #bebebe;
+  order: 1;
+  font-family: PT Sans Narrow, sans-serif;
+  text-align: center;
+  margin: 0;
 }
