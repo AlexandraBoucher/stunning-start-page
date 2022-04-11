@@ -58,8 +58,6 @@ nav li a {
   border-radius: 6px;
 }
 
-
-
 main ul {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -73,6 +71,10 @@ section li {
   border: 2px solid #bebebe;
   border-radius: 6px;
   margin: 0;
+}
+
+li img {
+  width: 100%
 }
 
 div img {
@@ -92,8 +94,8 @@ div {
 
 h3 {
   background-color: #bebebe;
-  order: 1;
+  background-color: rgba (0,0,0,.);
   font-family: PT Sans Narrow, sans-serif;
-  text-align: center;
   margin: 0;
+  order: 1;
 }
