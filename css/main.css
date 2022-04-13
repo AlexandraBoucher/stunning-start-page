@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  background-color: #ccc;
+  background-color: #bebebe;
   margin: 0;
 }
 
@@ -81,19 +81,28 @@ main ul {
 section li {
   display: grid;
   grid-template-rows: 1fr;
-  border: 2px solid #bebebe;
+  border: 2px solid #afafaf;
   border-radius: 6px;
   margin: 0;
   padding-top: .5em;
   color: #323232;
+  background-color: #ccc;
 }
 
+div {
+  margin-left: auto;
+  padding-left: .5em;
+}
+
+div strong {
+  padding: .2em .8em;
+}
 li img {
   width: 100%
 }
 
 div img {
-  width: 1.5rem;
+  width: 1rem;
   order: -1;
 }
 
@@ -109,10 +118,12 @@ div {
 
 h3 {
   background-color: #bebebe;
-  background-color: rgba (0,0,0,.);
+  background-color: rgba (0,0,0,.5);
   font-family: PT Sans Narrow, sans-serif;
   margin: 0;
   order: 1;
+  padding: 1rem;
+  text-align: center;
 }
 
 footer {
@@ -127,6 +138,7 @@ section {
   padding-bottom: 1rem;
   border-bottom: 2px solid #afafaf;
 }
+
 footer p {
   color: #323232;
 }
